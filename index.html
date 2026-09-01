@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Previsão do Tempo - BrasilAPI</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+
+    <!--Container 1:
+    header define o cabeçalho, com escrita;
+    Contem título sendo o h1 e subtítulo como p de parágrafo-->
+    
+    <div class="container">
+      <header>
+        <h1>Previsão do Tempo</h1>
+        <p class="subtitle">
+          Pesquise uma cidade e veja a previsão via BrasilAPI / CPTEC
+        </p>
+      </header>
+
+
+      <!--Caixa de Texto:
+      Type="text" define a cx para receber texto (string);
+      id define um "nome" para o css e js;
+      placeholder define o que aparecerá no campo de texto previamente até algo ser digitado e substituir o placeholder
+      autocomplete ativa ou desativa a sugestão de palavra, evitando confusão e esquecimento da palavra original do usuário-->
+
+      <div class="search-box">
+        <input
+          type="text"
+          id="cidade-input"
+          placeholder="Digite o nome da cidade e pressione Enter..."  
+          autocomplete="off"
+        />
+      </div>
+
+      <p id="status" class="status" aria-live="polite"></p>
+
+      <ul id="lista-cidades" class="lista-cidades"></ul>
+
+      <section id="previsao" class="previsao"></section>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

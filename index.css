@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background: linear-gradient(135deg, #1a1030 0%, #241848 40%, #16213e 100%);
+  color: #f0eefc;
+  display: flex;
+  justify-content: center;
+  padding: 40px 16px;
+}
+
+.container {
+  width: 100%;
+  max-width: 640px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+h1 {
+  font-size: 2rem;
+  background: linear-gradient(90deg, #b794f6, #63b3ed);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.subtitle {
+  color: #b8b3d1;
+  font-size: 0.9rem;
+  margin-top: 6px;
+  margin: auto;
+}
+
+.search-box {
+  margin-bottom: 12px;
+}
+
+#cidade-input {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition:
+    border-color 0.2s,
+    background 0.2s;
+}
+
+#cidade-input:focus {
+  border-color: #b794f6;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+#cidade-input::placeholder {
+  color: #8a84ab;
+}
+
+.status {
+  text-align: center;
+  min-height: 20px;
+  margin: 10px 0;
+  font-size: 0.9rem;
+  color: #cbb8ff;
+}
+
+.status.erro {
+  color: #ff8a8a;
+}
+
+.lista-cidades {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.lista-cidades li {
+  padding: 12px 16px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition:
+    background 0.2s,
+    transform 0.1s;
+}
+
+.lista-cidades li:hover {
+  background: rgba(183, 148, 246, 0.18);
+  transform: translateX(2px);
+}
+
+.lista-cidades li .estado {
+  font-size: 0.8rem;
+  color: #b8b3d1;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+
+.previsao {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.previsao h2 {
+  font-size: 1.2rem;
+  margin-bottom: 4px;
+  color: #d9c9ff;
+}
+
+.previsao .atualizado {
+  font-size: 0.8rem;
+  color: #8a84ab;
+  margin-bottom: 8px;
+}
+
+.dia-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 16px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.dia-card .data {
+  font-weight: 600;
+  min-width: 90px;
+}
+
+.dia-card .condicao {
+  color: #cbb8ff;
+  flex: 1;
+  min-width: 140px;
+}
+
+.dia-card .temperaturas {
+  font-size: 0.95rem;
+  color: #f0eefc;
+}
+
+.dia-card .temperaturas .max {
+  color: #ff9d7a;
+  font-weight: 600;
+}
+
+.dia-card .temperaturas .min {
+  color: #7ac6ff;
+  font-weight: 600;
+}
+
+.dia-card .uv {
+  font-size: 0.8rem;
+  color: #b8b3d1;
+}
