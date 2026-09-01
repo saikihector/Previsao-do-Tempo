@@ -11,3 +11,7 @@ O projeto tornou-se um site de uso funcional e prático, visando trazer o conhec
 - HTML 5
 - CSS 3
 - JavaScript
+
+## Link para acesso online:
+
+[Previsão do Tempo](previsao-do-tempo-pearl.vercel.app)
