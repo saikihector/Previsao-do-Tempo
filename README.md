@@ -387,6 +387,5 @@ function mostrarPrevisao(dados) {
 
 
 **"O projeto usa alguma biblioteca ou framework?"**
-Não — só HTML, CSS e JavaScript puro (*vanilla JS*), como pedido no
-enunciado. `fetch`, `document`, `Promise` etc. são todos recursos nativos do
+Não — só HTML, CSS e JavaScript puro (*vanilla JS*). `fetch`, `document`, `Promise` etc. são todos recursos nativos do
 navegador.
