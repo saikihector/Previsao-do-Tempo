@@ -2,7 +2,7 @@
 
 ## Projeto:
 
-O projeto tornou-se um site de uso funcional e prático, visando trazer o conhecimento da temperatura máxima, mínima e qual o "céu". As informações são somente do dia da pesquisa feita.
+O projeto tornou-se um site de uso funcional e prático, visando trazer o conhecimento da temperatura máxima, mínima e qual a condição. As informações são somente do dia da pesquisa feita.
 
 <hr>
 
