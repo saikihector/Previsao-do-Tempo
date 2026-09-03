@@ -18,7 +18,7 @@ O projeto tornou-se um site de uso funcional e prático, visando trazer o conhec
 
 <hr>
 
-# Explicação da Atividade 1 — Requisição HTTP
+# Explicação do Projeto
 
 Aplicação web que consulta a **BrasilAPI (serviço CPTEC)** para buscar cidades e
 mostrar a previsão do tempo, usando apenas **HTML, CSS e JavaScript puro**.
@@ -385,28 +385,6 @@ function mostrarPrevisao(dados) {
 
 ---
 
-## 6. Perguntas que o professor pode fazer (e como responder)
-
-**"Por que usar `async/await` em vez de chamar a API direto?"**
-Porque uma requisição HTTP demora um tempo indeterminado para responder. Sem
-`async/await` (ou `.then()`), o código continuaria executando antes da
-resposta chegar, tentando usar dados que ainda não existem.
-
-**"O que acontece se a cidade digitada não existir?"**
-A API retorna um array vazio ou uma resposta de erro. O código verifica
-`cidades.length === 0` e `resposta.ok` para mostrar uma mensagem adequada ao
-usuário em vez de travar ou mostrar tela em branco.
-
-**"Por que colocar o `<script>` no final do `<body>`?"**
-Porque o JavaScript precisa que os elementos HTML (`input`, `ul`, etc.) já
-existam na página no momento em que roda `document.getElementById`. Se o
-script estivesse no `<head>`, esses elementos ainda não teriam sido
-carregados e as variáveis ficariam `null`.
-
-**"Como o `id` da cidade clicada chega até a segunda requisição?"**
-Ele é salvo como atributo `data-id` em cada `<li>` no momento em que a lista é
-montada (Passo 5). Ao clicar, o evento lê esse atributo com
-`this.getAttribute('data-id')` e passa esse valor para `buscarPrevisao()`.
 
 **"O projeto usa alguma biblioteca ou framework?"**
 Não — só HTML, CSS e JavaScript puro (*vanilla JS*), como pedido no
